@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE48631F149509F90082822E /* libsqliteFTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE48631C149509E70082822E /* libsqliteFTS.a */; };
 		CEF4E2AD1494A5030099F97E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2AC1494A5030099F97E /* UIKit.framework */; };
 		CEF4E2AF1494A5030099F97E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2AE1494A5030099F97E /* Foundation.framework */; };
 		CEF4E2B11494A5030099F97E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2B01494A5030099F97E /* CoreGraphics.framework */; };
@@ -24,7 +25,25 @@
 		CEF4E2FD1494BC950099F97E /* FTS.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2FC1494BC950099F97E /* FTS.sqlite */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE48631B149509E70082822E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE486314149509E70082822E /* sqliteFTS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CEFDFE2114948AE50030D63F;
+			remoteInfo = sqliteFTS;
+		};
+		CE48631D149509F40082822E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE486314149509E70082822E /* sqliteFTS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFDFE2014948AE50030D63F;
+			remoteInfo = sqliteFTS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE486314149509E70082822E /* sqliteFTS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqliteFTS.xcodeproj; path = sqliteFTS/sqliteFTS.xcodeproj; sourceTree = "<group>"; };
 		CEF4E2A81494A5030099F97E /* sqliteFTSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqliteFTSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF4E2AC1494A5030099F97E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEF4E2AE1494A5030099F97E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE48631F149509F90082822E /* libsqliteFTS.a in Frameworks */,
 				CEF4E2AD1494A5030099F97E /* UIKit.framework in Frameworks */,
 				CEF4E2AF1494A5030099F97E /* Foundation.framework in Frameworks */,
 				CEF4E2B11494A5030099F97E /* CoreGraphics.framework in Frameworks */,
@@ -66,9 +86,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE486315149509E70082822E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE48631C149509E70082822E /* libsqliteFTS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CEF4E29D1494A5030099F97E = {
 			isa = PBXGroup;
 			children = (
+				CE486314149509E70082822E /* sqliteFTS.xcodeproj */,
 				CEF4E2B21494A5030099F97E /* sqliteFTSTest */,
 				CEF4E2AB1494A5030099F97E /* Frameworks */,
 				CEF4E2A91494A5030099F97E /* Products */,
@@ -151,6 +180,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE48631E149509F40082822E /* PBXTargetDependency */,
 			);
 			name = sqliteFTSTest;
 			productName = sqliteFTSTest;
@@ -176,12 +206,28 @@
 			mainGroup = CEF4E29D1494A5030099F97E;
 			productRefGroup = CEF4E2A91494A5030099F97E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE486315149509E70082822E /* Products */;
+					ProjectRef = CE486314149509E70082822E /* sqliteFTS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CEF4E2A71494A5030099F97E /* sqliteFTSTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CE48631C149509E70082822E /* libsqliteFTS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqliteFTS.a;
+			remoteRef = CE48631B149509E70082822E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CEF4E2A61494A5030099F97E /* Resources */ = {
@@ -214,6 +260,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE48631E149509F40082822E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqliteFTS;
+			targetProxy = CE48631D149509F40082822E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEF4E2B51494A5030099F97E /* InfoPlist.strings */ = {
