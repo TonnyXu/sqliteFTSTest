@@ -16,6 +16,8 @@
 		CEF4E2C01494A5030099F97E /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2BF1494A5030099F97E /* TTViewController.m */; };
 		CEF4E2C31494A5030099F97E /* TTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2C11494A5030099F97E /* TTViewController.xib */; };
 		CEF4E2D21494A9970099F97E /* edict2_utf8.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2D11494A9970099F97E /* edict2_utf8.txt */; };
+		CEF4E2DB1494B36E0099F97E /* FileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2DA1494B36E0099F97E /* FileReader.m */; };
+		CEF4E2DE1494B4520099F97E /* NSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		CEF4E2C21494A5030099F97E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTViewController.xib; sourceTree = "<group>"; };
 		CEF4E2C91494A5200099F97E /* sqliteFTS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqliteFTS.xcodeproj; path = ../sqliteFTS/sqliteFTS.xcodeproj; sourceTree = "<group>"; };
 		CEF4E2D11494A9970099F97E /* edict2_utf8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edict2_utf8.txt; sourceTree = "<group>"; };
+		CEF4E2D91494B36E0099F97E /* FileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileReader.h; path = LineReader/FileReader.h; sourceTree = SOURCE_ROOT; };
+		CEF4E2DA1494B36E0099F97E /* FileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileReader.m; path = LineReader/FileReader.m; sourceTree = SOURCE_ROOT; };
+		CEF4E2DC1494B4520099F97E /* NSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataExtensions.h; path = LineReader/NSDataExtensions.h; sourceTree = SOURCE_ROOT; };
+		CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataExtensions.m; path = LineReader/NSDataExtensions.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 		CEF4E2B21494A5030099F97E /* sqliteFTSTest */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4E2DC1494B4520099F97E /* NSDataExtensions.h */,
+				CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */,
+				CEF4E2D91494B36E0099F97E /* FileReader.h */,
+				CEF4E2DA1494B36E0099F97E /* FileReader.m */,
 				CEF4E2BB1494A5030099F97E /* TTAppDelegate.h */,
 				CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */,
 				CEF4E2BE1494A5030099F97E /* TTViewController.h */,
@@ -211,6 +221,8 @@
 				CEF4E2B91494A5030099F97E /* main.m in Sources */,
 				CEF4E2BD1494A5030099F97E /* TTAppDelegate.m in Sources */,
 				CEF4E2C01494A5030099F97E /* TTViewController.m in Sources */,
+				CEF4E2DB1494B36E0099F97E /* FileReader.m in Sources */,
+				CEF4E2DE1494B4520099F97E /* NSDataExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "TTViewController.h"
 #import "sqlite3.h"
+#import "FileReader.h"
 
 @implementation TTViewController
 @synthesize searchFeild;
@@ -63,21 +64,15 @@
 }
 
 - (IBAction)readinRecords:(id)sender {
+
+  FileReader *txtFileReader = [[FileReader alloc] initWithFilePath:[[NSBundle mainBundle] pathForResource:@"edict2_utf8" ofType:@"txt"]];
+  __block int readLines = 0;
+  [txtFileReader enumerateLinesUsingBlock:^(NSString *aNewLine, BOOL *stop) {
+    if (readLines >= 20) *stop = YES;
+    NSLog(@"We Got: %@", aNewLine);
+    readLines++;
+  }];
   
-  NSFileHandle *fh = [NSFileHandle fileHandleForReadingAtPath:[[NSBundle mainBundle] pathForResource:@"edict2_utf8" ofType:@"txt"]];
-  __block int count = 0;
-  fh.readabilityHandler = ^(NSFileHandle *theHandler){
-    NSData *availableData = theHandler.availableData;
-    NSLog(@"We got: %@", [[NSString alloc] initWithBytesNoCopy:[availableData bytes] length:[availableData length] encoding:NSUTF8StringEncoding freeWhenDone:YES]);
-    count++;
-    if (count >= 20) {
-      theHandler = nil;
-    }
-  };
-//  dispatch_queue_t importQueue = dispatch_queue_create("net.totodotnet.tonny.fts.readin", NULL);
-//  dispatch_async(importQueue, ^{
-//    
-//  });
   
 }
 
