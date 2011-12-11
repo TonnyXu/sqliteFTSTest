@@ -3,11 +3,10 @@
 //  sqliteFTSTest
 //
 //  Created by Tonny Xu on 12/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 blog.totodotnet.net. All rights reserved.
 //
 
 #import "TTViewController.h"
-#import "sqlite3.h"
 #import "FileReader.h"
 
 @implementation TTViewController
@@ -26,6 +25,7 @@
 {
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+  
 }
 
 - (void)viewDidUnload

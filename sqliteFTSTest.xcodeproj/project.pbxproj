@@ -18,6 +18,10 @@
 		CEF4E2D21494A9970099F97E /* edict2_utf8.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2D11494A9970099F97E /* edict2_utf8.txt */; };
 		CEF4E2DB1494B36E0099F97E /* FileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2DA1494B36E0099F97E /* FileReader.m */; };
 		CEF4E2DE1494B4520099F97E /* NSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */; };
+		CEF4E2F71494B80B0099F97E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2F11494B80B0099F97E /* FMDatabase.m */; };
+		CEF4E2F81494B80B0099F97E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2F31494B80B0099F97E /* FMDatabaseAdditions.m */; };
+		CEF4E2FA1494B80B0099F97E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2F61494B80B0099F97E /* FMResultSet.m */; };
+		CEF4E2FB1494B8EF0099F97E /* libsqliteFTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2CE1494A5200099F97E /* libsqliteFTS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,12 @@
 		CEF4E2DA1494B36E0099F97E /* FileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileReader.m; path = LineReader/FileReader.m; sourceTree = SOURCE_ROOT; };
 		CEF4E2DC1494B4520099F97E /* NSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataExtensions.h; path = LineReader/NSDataExtensions.h; sourceTree = SOURCE_ROOT; };
 		CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataExtensions.m; path = LineReader/NSDataExtensions.m; sourceTree = SOURCE_ROOT; };
+		CEF4E2F01494B80B0099F97E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/src/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		CEF4E2F11494B80B0099F97E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/src/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		CEF4E2F21494B80B0099F97E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/src/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		CEF4E2F31494B80B0099F97E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		CEF4E2F51494B80B0099F97E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		CEF4E2F61494B80B0099F97E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF4E2FB1494B8EF0099F97E /* libsqliteFTS.a in Frameworks */,
 				CEF4E2AD1494A5030099F97E /* UIKit.framework in Frameworks */,
 				CEF4E2AF1494A5030099F97E /* Foundation.framework in Frameworks */,
 				CEF4E2B11494A5030099F97E /* CoreGraphics.framework in Frameworks */,
@@ -142,6 +153,12 @@
 		CEF4E2DF1494B6220099F97E /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4E2F01494B80B0099F97E /* FMDatabase.h */,
+				CEF4E2F11494B80B0099F97E /* FMDatabase.m */,
+				CEF4E2F21494B80B0099F97E /* FMDatabaseAdditions.h */,
+				CEF4E2F31494B80B0099F97E /* FMDatabaseAdditions.m */,
+				CEF4E2F51494B80B0099F97E /* FMResultSet.h */,
+				CEF4E2F61494B80B0099F97E /* FMResultSet.m */,
 			);
 			name = FMDB;
 			sourceTree = "<group>";
@@ -174,6 +191,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = blog.totodotnet.net;
 			};
 			buildConfigurationList = CEF4E2A21494A5030099F97E /* Build configuration list for PBXProject "sqliteFTSTest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -231,6 +249,9 @@
 				CEF4E2C01494A5030099F97E /* TTViewController.m in Sources */,
 				CEF4E2DB1494B36E0099F97E /* FileReader.m in Sources */,
 				CEF4E2DE1494B4520099F97E /* NSDataExtensions.m in Sources */,
+				CEF4E2F71494B80B0099F97E /* FMDatabase.m in Sources */,
+				CEF4E2F81494B80B0099F97E /* FMDatabaseAdditions.m in Sources */,
+				CEF4E2FA1494B80B0099F97E /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
