@@ -15,22 +15,42 @@
 		CEF4E2BD1494A5030099F97E /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */; };
 		CEF4E2C01494A5030099F97E /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2BF1494A5030099F97E /* TTViewController.m */; };
 		CEF4E2C31494A5030099F97E /* TTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2C11494A5030099F97E /* TTViewController.xib */; };
+		CEF4E2D21494A9970099F97E /* edict2_utf8.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2D11494A9970099F97E /* edict2_utf8.txt */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEF4E2CD1494A5200099F97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF4E2C91494A5200099F97E /* sqliteFTS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CEFDFE2114948AE50030D63F;
+			remoteInfo = sqliteFTS;
+		};
+		CEF4E2CF1494A52A0099F97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF4E2C91494A5200099F97E /* sqliteFTS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFDFE2014948AE50030D63F;
+			remoteInfo = sqliteFTS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CEF4E2A81494A5030099F97E /* sqliteFTSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqliteFTSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF4E2AC1494A5030099F97E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEF4E2AE1494A5030099F97E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEF4E2B01494A5030099F97E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEF4E2B41494A5030099F97E /* sqliteFTSTest-Info.plist */ = {isa = PBXFileReference; path = "sqliteFTSTest-Info.plist"; sourceTree = "<group>"; };
+		CEF4E2B41494A5030099F97E /* sqliteFTSTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sqliteFTSTest-Info.plist"; sourceTree = "<group>"; };
 		CEF4E2B61494A5030099F97E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEF4E2B81494A5030099F97E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEF4E2BA1494A5030099F97E /* sqliteFTSTest-Prefix.pch */ = {isa = PBXFileReference; path = "sqliteFTSTest-Prefix.pch"; sourceTree = "<group>"; };
-		CEF4E2BB1494A5030099F97E /* TTAppDelegate.h */ = {isa = PBXFileReference; path = TTAppDelegate.h; sourceTree = "<group>"; };
+		CEF4E2BA1494A5030099F97E /* sqliteFTSTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sqliteFTSTest-Prefix.pch"; sourceTree = "<group>"; };
+		CEF4E2BB1494A5030099F97E /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
 		CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
-		CEF4E2BE1494A5030099F97E /* TTViewController.h */ = {isa = PBXFileReference; path = TTViewController.h; sourceTree = "<group>"; };
+		CEF4E2BE1494A5030099F97E /* TTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
 		CEF4E2BF1494A5030099F97E /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
 		CEF4E2C21494A5030099F97E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTViewController.xib; sourceTree = "<group>"; };
+		CEF4E2C91494A5200099F97E /* sqliteFTS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqliteFTS.xcodeproj; path = ../sqliteFTS/sqliteFTS.xcodeproj; sourceTree = "<group>"; };
+		CEF4E2D11494A9970099F97E /* edict2_utf8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edict2_utf8.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +70,7 @@
 		CEF4E29D1494A5030099F97E = {
 			isa = PBXGroup;
 			children = (
+				CEF4E2C91494A5200099F97E /* sqliteFTS.xcodeproj */,
 				CEF4E2B21494A5030099F97E /* sqliteFTSTest */,
 				CEF4E2AB1494A5030099F97E /* Frameworks */,
 				CEF4E2A91494A5030099F97E /* Products */,
@@ -90,12 +111,21 @@
 		CEF4E2B31494A5030099F97E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4E2D11494A9970099F97E /* edict2_utf8.txt */,
 				CEF4E2B41494A5030099F97E /* sqliteFTSTest-Info.plist */,
 				CEF4E2B51494A5030099F97E /* InfoPlist.strings */,
 				CEF4E2B81494A5030099F97E /* main.m */,
 				CEF4E2BA1494A5030099F97E /* sqliteFTSTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF4E2CA1494A5200099F97E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2CE1494A5200099F97E /* libsqliteFTS.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +142,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CEF4E2D01494A52A0099F97E /* PBXTargetDependency */,
 			);
 			name = sqliteFTSTest;
 			productName = sqliteFTSTest;
@@ -136,12 +167,28 @@
 			mainGroup = CEF4E29D1494A5030099F97E;
 			productRefGroup = CEF4E2A91494A5030099F97E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CEF4E2CA1494A5200099F97E /* Products */;
+					ProjectRef = CEF4E2C91494A5200099F97E /* sqliteFTS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CEF4E2A71494A5030099F97E /* sqliteFTSTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CEF4E2CE1494A5200099F97E /* libsqliteFTS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqliteFTS.a;
+			remoteRef = CEF4E2CD1494A5200099F97E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CEF4E2A61494A5030099F97E /* Resources */ = {
@@ -150,6 +197,7 @@
 			files = (
 				CEF4E2B71494A5030099F97E /* InfoPlist.strings in Resources */,
 				CEF4E2C31494A5030099F97E /* TTViewController.xib in Resources */,
+				CEF4E2D21494A9970099F97E /* edict2_utf8.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEF4E2D01494A52A0099F97E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqliteFTS;
+			targetProxy = CEF4E2CF1494A52A0099F97E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEF4E2B51494A5030099F97E /* InfoPlist.strings */ = {
