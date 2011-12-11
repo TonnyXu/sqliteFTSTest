@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *searchFeild;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
+@property (strong, nonatomic) FMDatabase *db;
+
 - (IBAction)readinRecords:(id)sender;
 - (IBAction)doFTSSearch:(id)sender;
 @end

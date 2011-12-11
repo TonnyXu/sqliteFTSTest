@@ -22,6 +22,7 @@
 		CEF4E2F81494B80B0099F97E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2F31494B80B0099F97E /* FMDatabaseAdditions.m */; };
 		CEF4E2FA1494B80B0099F97E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2F61494B80B0099F97E /* FMResultSet.m */; };
 		CEF4E2FB1494B8EF0099F97E /* libsqliteFTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2CE1494A5200099F97E /* libsqliteFTS.a */; };
+		CEF4E2FD1494BC950099F97E /* FTS.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2FC1494BC950099F97E /* FTS.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CEF4E2F31494B80B0099F97E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
 		CEF4E2F51494B80B0099F97E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
 		CEF4E2F61494B80B0099F97E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		CEF4E2FC1494BC950099F97E /* FTS.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FTS.sqlite; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		CEF4E2B31494A5030099F97E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4E2FC1494BC950099F97E /* FTS.sqlite */,
 				CEF4E2D11494A9970099F97E /* edict2_utf8.txt */,
 				CEF4E2B41494A5030099F97E /* sqliteFTSTest-Info.plist */,
 				CEF4E2B51494A5030099F97E /* InfoPlist.strings */,
@@ -234,6 +237,7 @@
 				CEF4E2B71494A5030099F97E /* InfoPlist.strings in Resources */,
 				CEF4E2C31494A5030099F97E /* TTViewController.xib in Resources */,
 				CEF4E2D21494A9970099F97E /* edict2_utf8.txt in Resources */,
+				CEF4E2FD1494BC950099F97E /* FTS.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +375,7 @@
 				CEF4E2C81494A5030099F97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
