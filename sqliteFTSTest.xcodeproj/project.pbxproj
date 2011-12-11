@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF4E2AD1494A5030099F97E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2AC1494A5030099F97E /* UIKit.framework */; };
+		CEF4E2AF1494A5030099F97E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2AE1494A5030099F97E /* Foundation.framework */; };
+		CEF4E2B11494A5030099F97E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E2B01494A5030099F97E /* CoreGraphics.framework */; };
+		CEF4E2B71494A5030099F97E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2B51494A5030099F97E /* InfoPlist.strings */; };
+		CEF4E2B91494A5030099F97E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2B81494A5030099F97E /* main.m */; };
+		CEF4E2BD1494A5030099F97E /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */; };
+		CEF4E2C01494A5030099F97E /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E2BF1494A5030099F97E /* TTViewController.m */; };
+		CEF4E2C31494A5030099F97E /* TTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E2C11494A5030099F97E /* TTViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEF4E2A81494A5030099F97E /* sqliteFTSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqliteFTSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF4E2AC1494A5030099F97E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEF4E2AE1494A5030099F97E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEF4E2B01494A5030099F97E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEF4E2B41494A5030099F97E /* sqliteFTSTest-Info.plist */ = {isa = PBXFileReference; path = "sqliteFTSTest-Info.plist"; sourceTree = "<group>"; };
+		CEF4E2B61494A5030099F97E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF4E2B81494A5030099F97E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF4E2BA1494A5030099F97E /* sqliteFTSTest-Prefix.pch */ = {isa = PBXFileReference; path = "sqliteFTSTest-Prefix.pch"; sourceTree = "<group>"; };
+		CEF4E2BB1494A5030099F97E /* TTAppDelegate.h */ = {isa = PBXFileReference; path = TTAppDelegate.h; sourceTree = "<group>"; };
+		CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
+		CEF4E2BE1494A5030099F97E /* TTViewController.h */ = {isa = PBXFileReference; path = TTViewController.h; sourceTree = "<group>"; };
+		CEF4E2BF1494A5030099F97E /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
+		CEF4E2C21494A5030099F97E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF4E2A51494A5030099F97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4E2AD1494A5030099F97E /* UIKit.framework in Frameworks */,
+				CEF4E2AF1494A5030099F97E /* Foundation.framework in Frameworks */,
+				CEF4E2B11494A5030099F97E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF4E29D1494A5030099F97E = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2B21494A5030099F97E /* sqliteFTSTest */,
+				CEF4E2AB1494A5030099F97E /* Frameworks */,
+				CEF4E2A91494A5030099F97E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF4E2A91494A5030099F97E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2A81494A5030099F97E /* sqliteFTSTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF4E2AB1494A5030099F97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2AC1494A5030099F97E /* UIKit.framework */,
+				CEF4E2AE1494A5030099F97E /* Foundation.framework */,
+				CEF4E2B01494A5030099F97E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF4E2B21494A5030099F97E /* sqliteFTSTest */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2BB1494A5030099F97E /* TTAppDelegate.h */,
+				CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */,
+				CEF4E2BE1494A5030099F97E /* TTViewController.h */,
+				CEF4E2BF1494A5030099F97E /* TTViewController.m */,
+				CEF4E2C11494A5030099F97E /* TTViewController.xib */,
+				CEF4E2B31494A5030099F97E /* Supporting Files */,
+			);
+			path = sqliteFTSTest;
+			sourceTree = "<group>";
+		};
+		CEF4E2B31494A5030099F97E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2B41494A5030099F97E /* sqliteFTSTest-Info.plist */,
+				CEF4E2B51494A5030099F97E /* InfoPlist.strings */,
+				CEF4E2B81494A5030099F97E /* main.m */,
+				CEF4E2BA1494A5030099F97E /* sqliteFTSTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF4E2A71494A5030099F97E /* sqliteFTSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF4E2C61494A5030099F97E /* Build configuration list for PBXNativeTarget "sqliteFTSTest" */;
+			buildPhases = (
+				CEF4E2A41494A5030099F97E /* Sources */,
+				CEF4E2A51494A5030099F97E /* Frameworks */,
+				CEF4E2A61494A5030099F97E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sqliteFTSTest;
+			productName = sqliteFTSTest;
+			productReference = CEF4E2A81494A5030099F97E /* sqliteFTSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF4E29F1494A5030099F97E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CEF4E2A21494A5030099F97E /* Build configuration list for PBXProject "sqliteFTSTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEF4E29D1494A5030099F97E;
+			productRefGroup = CEF4E2A91494A5030099F97E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF4E2A71494A5030099F97E /* sqliteFTSTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF4E2A61494A5030099F97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4E2B71494A5030099F97E /* InfoPlist.strings in Resources */,
+				CEF4E2C31494A5030099F97E /* TTViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF4E2A41494A5030099F97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4E2B91494A5030099F97E /* main.m in Sources */,
+				CEF4E2BD1494A5030099F97E /* TTAppDelegate.m in Sources */,
+				CEF4E2C01494A5030099F97E /* TTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF4E2B51494A5030099F97E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF4E2B61494A5030099F97E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEF4E2C11494A5030099F97E /* TTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF4E2C21494A5030099F97E /* en */,
+			);
+			name = TTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF4E2C41494A5030099F97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEF4E2C51494A5030099F97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF4E2C71494A5030099F97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sqliteFTSTest/sqliteFTSTest-Prefix.pch";
+				INFOPLIST_FILE = "sqliteFTSTest/sqliteFTSTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEF4E2C81494A5030099F97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sqliteFTSTest/sqliteFTSTest-Prefix.pch";
+				INFOPLIST_FILE = "sqliteFTSTest/sqliteFTSTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF4E2A21494A5030099F97E /* Build configuration list for PBXProject "sqliteFTSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF4E2C41494A5030099F97E /* Debug */,
+				CEF4E2C51494A5030099F97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF4E2C61494A5030099F97E /* Build configuration list for PBXNativeTarget "sqliteFTSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF4E2C71494A5030099F97E /* Debug */,
+				CEF4E2C81494A5030099F97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF4E29F1494A5030099F97E /* Project object */;
+}
