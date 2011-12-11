@@ -4,3 +4,6 @@
 [submodule "fmdb"]
 	path = fmdb
 	url = git@github.com:TonnyXu/fmdb.git
+[submodule "sqliteFTS"]
+	path = sqliteFTS
+	url = git@github.com:TonnyXu/sqliteFTS.git
