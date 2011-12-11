@@ -104,6 +104,7 @@
 		CEF4E2B21494A5030099F97E /* sqliteFTSTest */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4E2DF1494B6220099F97E /* FMDB */,
 				CEF4E2DC1494B4520099F97E /* NSDataExtensions.h */,
 				CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */,
 				CEF4E2D91494B36E0099F97E /* FileReader.h */,
@@ -136,6 +137,13 @@
 				CEF4E2CE1494A5200099F97E /* libsqliteFTS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF4E2DF1494B6220099F97E /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
