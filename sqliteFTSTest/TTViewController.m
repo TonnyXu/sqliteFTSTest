@@ -65,7 +65,8 @@
   
   self.db = [FMDatabase databaseWithPath:dbPath];
   [self.db open];
-  self.db.traceExecution = YES;
+  // to see the DB actions, remove the comment
+  //self.db.traceExecution = YES;
 }
 
 - (void)viewDidUnload
@@ -220,5 +221,34 @@
 }
 
 - (IBAction)doFTSSearchWithJapanese:(id)sender {
+  if ([self.searchFeild.text isEqualToString:@""]) {
+    self.resultLabel.text = @"Result: NO keyword";
+    return;
+  }
+  
+  /* Tonny's NOTE
+   * ============
+   *
+   * See origin: http://www.sqlite.org/fts3.html#section_1_3
+   *
+   * -- The examples in this block assume the following FTS table:
+   * CREATE VIRTUAL TABLE mail USING fts3(subject, body);
+   * 
+   * SELECT * FROM mail WHERE rowid = 15;                -- Fast. Rowid lookup.
+   * SELECT * FROM mail WHERE body MATCH 'sqlite';       -- Fast. Full-text query.
+   * SELECT * FROM mail WHERE mail MATCH 'search';       -- Fast. Full-text query.
+   * SELECT * FROM mail WHERE rowid BETWEEN 15 AND 20;   -- Slow. Linear scan.
+   * SELECT * FROM mail WHERE subject = 'database';      -- Slow. Linear scan.
+   * SELECT * FROM mail WHERE subject MATCH 'database';  -- Fast. Full-text query.
+   *
+   */
+  
+  NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
+  FMResultSet *result = [self.db executeQuery:[NSString stringWithFormat:@"SELECT count(*) FROM edict WHERE word MATCH '%@';", self.searchFeild.text]];
+  NSTimeInterval endTime = [[NSDate date] timeIntervalSince1970];
+  
+  while ([result next]) {
+    self.resultLabel.text = [NSString stringWithFormat:@"Result: [%6d] hits, using: %.3f seconds", [result intForColumnIndex:0], (endTime - startTime)];
+  }
 }
 @end
