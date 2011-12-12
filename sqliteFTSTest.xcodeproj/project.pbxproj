@@ -125,11 +125,8 @@
 		CEF4E2B21494A5030099F97E /* sqliteFTSTest */ = {
 			isa = PBXGroup;
 			children = (
+				E1DBD05F1495EFFF00E8D3D3 /* Line Reader */,
 				CEF4E2DF1494B6220099F97E /* FMDB */,
-				CEF4E2DC1494B4520099F97E /* NSDataExtensions.h */,
-				CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */,
-				CEF4E2D91494B36E0099F97E /* FileReader.h */,
-				CEF4E2DA1494B36E0099F97E /* FileReader.m */,
 				CEF4E2BB1494A5030099F97E /* TTAppDelegate.h */,
 				CEF4E2BC1494A5030099F97E /* TTAppDelegate.m */,
 				CEF4E2BE1494A5030099F97E /* TTViewController.h */,
@@ -164,6 +161,17 @@
 				CEF4E2F61494B80B0099F97E /* FMResultSet.m */,
 			);
 			name = FMDB;
+			sourceTree = "<group>";
+		};
+		E1DBD05F1495EFFF00E8D3D3 /* Line Reader */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E2DC1494B4520099F97E /* NSDataExtensions.h */,
+				CEF4E2DD1494B4520099F97E /* NSDataExtensions.m */,
+				CEF4E2D91494B36E0099F97E /* FileReader.h */,
+				CEF4E2DA1494B36E0099F97E /* FileReader.m */,
+			);
+			name = "Line Reader";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
