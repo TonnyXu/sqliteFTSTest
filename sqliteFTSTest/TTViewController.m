@@ -206,4 +206,7 @@
   }
   
 }
+
+- (IBAction)doFTSSearchWithJapanese:(id)sender {
+}
 @end

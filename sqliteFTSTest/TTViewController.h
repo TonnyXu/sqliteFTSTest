@@ -17,4 +17,5 @@
 
 - (IBAction)readinRecords:(id)sender;
 - (IBAction)doFTSSearch:(id)sender;
+- (IBAction)doFTSSearchWithJapanese:(id)sender;
 @end
